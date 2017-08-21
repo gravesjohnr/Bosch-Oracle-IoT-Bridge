@@ -1,0 +1,116 @@
+{
+  "urn": "urn:bosch:device:xdk",
+  "name": "Bosch XDK",
+  "description": "Bosch XDK Device",
+  "attributes": [
+    {
+      "description": "Device ID",
+      "name": "xdkSN",
+      "type": "STRING",
+      "writable": true
+    },
+    {
+      "description": "Name",
+      "name": "name",
+      "type": "STRING",
+      "writable": true
+    },
+    {
+      "description": "Description",
+      "name": "description",
+      "type": "STRING",
+      "writable": true
+    },
+    {
+      "description": "Location",
+      "name": "location",
+      "type": "STRING",
+      "writable": true
+    }
+  ],
+  "formats": [
+    {
+      "urn": "urn:bosch:device:xdk:data",
+      "name": "data",
+      "description": "Bosch XDK Data",
+      "type": "DATA",
+      "deviceModel": "urn:bosch:device:xdk",
+      "value": {
+        "fields": [
+          {
+            "name": "light",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "pressure",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "temperature",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "humidity",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "accelerometerX",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "accelerometerY",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "accelerometerZ",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "gyroX",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "gyroY",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "gyroZ",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "magX",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "magY",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "magZ",
+            "optional": false,
+            "type": "NUMBER"
+          },
+          {
+            "name": "audiolevel",
+            "optional": false,
+            "type": "NUMBER"
+          }
+        ]
+      },
+      "sourceId": "urn:bosch:device:xdk",
+      "sourceType": "DEVICE_MODEL"
+    }
+  ]
+}

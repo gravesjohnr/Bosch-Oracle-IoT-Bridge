@@ -1,0 +1,7 @@
+name=Sample XDK
+description=Sample XDK Test Device
+location=Sydney, Australia
+ssid=Sample
+wifiPassword=SamplePW
+xdkBridgeUrl=https://bosch-bridge-hostanme:9905/bosch/xdk/senddata
+frequency=10000
