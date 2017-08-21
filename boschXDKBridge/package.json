@@ -1,0 +1,21 @@
+{
+  "name": "xdkbridge",
+  "version": "1.0.0",
+  "description": "Send data to IoT from Bosch XDK and Oyster",
+  "main": "xdkbridge.js",
+  "dependencies": {
+    "express": "~4.14.0",
+    "node-rest-client": "~1.8.0",
+    "body-parser": "~1.15.2",
+    "cors":"~2.8.3",
+    "node-uuid":"~1.4.3",
+    "request":"~2.55.0"
+  },
+  "scripts": {
+    "prepublish": "zip -r target/node-xdkbridge-0.0.1-dist.zip package.json manifest.json *.js node_modules"
+  },
+  "author": "john.graves@oracle.com",
+  "engines": {
+    "node": "6"
+  }
+}
